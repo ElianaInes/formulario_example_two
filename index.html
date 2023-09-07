@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12">
+          <form action="index.html" method="post">
+            <h1> Inscribirse</h1>
+            
+            <fieldset>
+              
+              <legend><span class="number">1</span>Información básica</legend>
+            
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="user_name" placeholder="Apellido y Nombre">
+
+              <label for="telefono">Telefono:</label>
+              <input type="tel" name="telefono" id="telefono" placeholder="3624000000">
+            
+              <label for="email">Email:</label>
+              <input type="email" id="mail" name="user_email" placeholder="example@gmail.com">
+           
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password"  name="user_password" placeholder="********">
+            
+              <label>Edad:</label>
+              <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Menor de 18</label><br>
+              <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Mayor de 18</label>
+              
+            </fieldset>
+    
+            <fieldset>  
+            
+              <legend><span class="number">2</span> Tu perfil</legend>
+              
+             <label for="bio">Conocimientos:</label>
+              <textarea id="bio" name="user_bio" class="conocimientos"></textarea>
+            
+           
+            
+             <label for="area">Area de capacitacion:</label>
+              <select id="area" name="areas de capacitacion">
+                <option value="Seleccione una opcion">Seleccione una opción</option>
+                <optgroup label="Marketing">
+                  <option value="Comunity Manager">Comunity Manager</option>
+                  <option value="Diseño Web">Diseño Web</option>
+                  <option value="Diseño Grafico">Diseño Grafico</option>
+                  <option value="Comunicacion Externa">Comunicación Externa</option>
+                </optgroup>
+                <optgroup label="Ventas y Porduccion">
+                  <option value="Estrategias de Venta">Estrategias de Venta</option>
+                  <option value="Optimizacion de recursos">Optimización de recursos</option>
+                  <option value="Produccion Sustentable">Producción Sustentable</option>
+                </optgroup>
+                <optgroup label="Finanzas y Legales">
+                  <option value="Auditorias">Auditorias</option>
+                  <option value="Analista de Impuestos">Analista de Impuestos</option>
+                  <option value="Normativa aplicable">Normativa aplicable</option>
+                </optgroup>
+              </select>
+              
+              <label>Modalidad:</label>
+              <input type="checkbox" id="Presencial" value="modalidad_presencial" name=""><label class="light" for="development">Presencial</label><br>
+              <input type="checkbox" id="Virtualdesign" value="modalidad_virtual" name=""><label class="light" for="design">Virtual</label><br>
+              <input type="checkbox" id="hibrido" value="modalidad_hibrido" name=""><label class="light" for="business">Hibrido</label>
+              
+             </fieldset>
+           
+            <button type="submit">Enviar</button>
+            
+           </form>
+            </div>
+          </div>
+      
+    
+</body>
+</html>
